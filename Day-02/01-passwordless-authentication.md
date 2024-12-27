@@ -13,7 +13,7 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 - "-o IdentityFile <PATH TO PEM FILE>": This option specifies the identity file (private key) to use for the connection. The -o flag passes this option to the underlying ssh command.
 - ubuntu@<INSTANCE-IP>: This is the username (ubuntu) and the IP address of the remote server you want to access.
 
-ssh ubuntu@<servername>
+ssh ubuntu@servername
 
 ### Using Password 
 
@@ -23,6 +23,6 @@ ssh ubuntu@<servername>
 
 sudo passwd ubuntu -> To set a new password to the target server
 - Go back to control node instance
-ssh-copy-id ubuntu@<servername> -> First time, it will ask for password.
-ssh ubuntu@<servername>
+ssh-copy-id ubuntu@servername -> First time, it will ask for password.
+ssh ubuntu@servername
 
