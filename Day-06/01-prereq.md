@@ -26,7 +26,9 @@ openssl rand -base64 2048 > vault.pass
 ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
 ```
 
+3. Decrypt the file in vault
 
+ansible-vault decrupt pass.yml --vault-password-file vault.pass
 
 
 
